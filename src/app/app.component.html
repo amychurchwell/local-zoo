@@ -3,10 +3,10 @@
     <h1 class="display-4">Welcome to {{ title }}!</h1>
     <p class="lead">This is an app to track zoo animals. <i class="fa fa-check"></i></p>
     <button class="btn btn-dark">Add animal.</button>
+    <age-search></age-search>
   </div>
   <div class="row">
-    <age-search></age-search>
-    <div class="col-md-4" *ngFor="let animal of animals">
+    <div class="col-md-4" *ngFor="let animal of animals | age:filterByAge">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">{{animal.name}}, {{animal.species}}.</h5>
@@ -24,21 +24,22 @@
     </div>
   </div>
   <div class="row">
-   <div class="col-md-12" *ngIf="selectedAnimal">
-     <h3>Edit Animal</h3>
-     <div class="form-group">
-       <label>Name:</label>
-       <input [(ngModel)]="selectedAnimal.name">
+    <div class="card">
+     <div class="card-body" *ngIf="selectedAnimal">
+       <h3>Edit Animal</h3>
+       <div class="form-group">
+         <label>Name:</label>
+         <input [(ngModel)]="selectedAnimal.name">
+       </div>
+       <div class="form-group">
+         <label>Age:</label>
+         <input [(ngModel)]="selectedAnimal.age">
+       </div>
+       <div class="form-group">
+         <label>Caretakers:</label>
+         <input [(ngModel)]="selectedAnimal.caretakers">
+       </div>
+       <button class="btn btn-dark" (click)="editAnimal(null)">Done</button>
      </div>
-     <div class="form-group">
-       <label>Age:</label>
-       <input [(ngModel)]="selectedAnimal.age">
-     </div>
-     <div class="form-group">
-       <label>Caretakers:</label>
-       <input [(ngModel)]="selectedAnimal.caretakers">
-     </div>
-     <button class="btn btn-dark" (click)="editAnimal(null)">Done</button>
    </div>
- </div>
 </div>

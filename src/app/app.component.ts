@@ -20,7 +20,4 @@ export class AppComponent {
     this.selectedAnimal = clickedAnimal;
   }
 
-  // addAnimal(newAnimalFromChild: Animal){
-  // this.animals.push(newAnimalFromChild);
-  // }
 }

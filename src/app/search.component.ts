@@ -8,13 +8,14 @@ import { AppComponent } from './app.component';
   <select (change)="onChange($event.target.value)">
     <option value="young">Young</option>
     <option value="old">Old</option>
+    <option value="all" selected="selected">All</option>
   </select>
   `
 })
 
 export class AnimalSearch {
 
-  filterByAge: string = "young";
+  filterByAge: string = "all";
   @Input() childAnimals: Animal[];
   @Output() clickSender = new EventEmitter();
 
@@ -22,5 +23,6 @@ export class AnimalSearch {
   onChange(optionFromMenu) {
     this.filterByAge = optionFromMenu;
   }
+
 
 }
