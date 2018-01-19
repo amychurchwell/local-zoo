@@ -21,7 +21,11 @@
      "styles": [
        "styles.css"
      ],
-     "scripts": ["../node_modules/bootstrap/dist/js/bootstrap.js"],
+     "scripts": [
+       "styles.css",
+       "../node_modules/bootstrap/dist/js/bootstrap.js",
+       "../node_modules/font-awesome/css/font-awesome.css"
+     ],
      "environmentSource": "environments/environment.ts",
      "environments": {
        "dev": "environments/environment.ts",

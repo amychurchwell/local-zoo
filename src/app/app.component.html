@@ -1,6 +1,21 @@
 <div class="container">
   <div class="jumbotron">
     <h1 class="display-4">Welcome to {{ title }}!</h1>
-    <p class="lead">This is an app to track zoo animals.</p>
+    <p class="lead">This is an app to track zoo animals. <i class="fa fa-check"></i></p>
   </div>
-  <p *ngFor="let animal of animals">{{animal.name}}</p>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let animal of animals">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{animal.name}}</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{animal.age}}</li>
+            <li class="list-group-item">{{animal.species}}</li>
+            <li class="list-group-item">{{animal.diet}}</li>
+            <li class="list-group-item">{{animal.location}}.</li>
+          </ul>
+        </div>
+        <button (click)="editAnimal(Animal)" class="btn btn-dark">Edit</button>
+      </div>
+    </div>
+  </div>
