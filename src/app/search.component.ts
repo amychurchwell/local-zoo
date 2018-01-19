@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
     <option value="young">Young</option>
     <option value="old">Old</option>
   </select>
-  <li *ngFor="let Animal of animals | age:filterByAge">{{animal.name}} {{animal.age}}</li>
   `
 })
 

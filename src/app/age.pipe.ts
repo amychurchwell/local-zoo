@@ -10,8 +10,8 @@ import { AppComponent } from './app.component';
 export class AgePipe implements PipeTransform{
   transform(input: Animal[], ageSearch) {
     var output: Animal[] = [];
-    console.log("output " + output);
-    console.log("input " + input);
+    console.log(output);
+    console.log(input);
   //   if(ageSearch === "young"){
   //     for (let i = 0; i < input.length; i++) {
   //       if (input[i].age <= 2) {
