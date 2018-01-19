@@ -5,3 +5,14 @@ import { Animal } from './animal.model';
   name: "age",
   pure: false
 })
+export class AgePipe implements PipeTransform {
+  transform(input: Animal[]){
+    var output: Animal[] = [];
+    for (var i = 0; i < input.length; i++) {
+      if (input[i].age === 2) {
+        output.push(input[i]);
+      }
+    }
+    return output;
+  }
+}

@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AnimalSearch } from './search.component';
+import { AgePipe } from './age.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnimalSearch
+    AnimalSearch,
+    AgePipe
   ],
   imports: [
     BrowserModule,
