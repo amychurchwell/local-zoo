@@ -5,16 +5,16 @@ import { Animal } from './animal.model';
   selector: 'age-search',
   template:`
   <select (change)="onChange($event.target.value)">
-    <option value="oldAnimals">Old Animals</option>
-    <option value="youngAnimals">Young Animals</option>
+    <option value="2">Old (2<)</option>
+    <option value="100">Young (<2)</option>
   </select>
   `
 })
 
 export class AnimalSearch {
 
-  filterBy: string = "Age";
-  @Input() childTaskList: Animal[];
+  filterBy: number;
+  @Input() childAnimals: Animal[];
   @Output() clickSender = new EventEmitter();
 
 
