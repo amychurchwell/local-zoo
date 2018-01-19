@@ -6,16 +6,46 @@ import { Animal } from './animal.model';
   selector: 'new-animal',
   template: `
   <div>
-    <h3>Add Animal</h3>
-    <div>
-      <label>Name:</label><br/>
-      <input #newName>
-    </div>
-    <div>
-      <label>Species:</label><br/>
-      <input #newSpecies>
-    </div>
-    <button class="btn btn-dark" (click)="submitForm(newName.value, newSpecies.value);">Add</button>
+    <form>
+      <h3>Add Animal</h3>
+      <div>
+        <label>Name:</label><br/>
+        <input #newName>
+      </div>
+      <div>
+        <label>Species:</label><br/>
+        <input #newSpecies>
+      </div>
+      <div>
+        <label>Age:</label><br/>
+        <input #newAge>
+      </div>
+      <div>
+        <label>Diet:</label><br/>
+        <input #newDiet>
+      </div>
+      <div>
+        <label>Location:</label><br/>
+        <input #newLocation>
+      </div>
+      <div>
+        <label>Caretakers:</label><br/>
+        <input #newCaretakers>
+      </div>
+      <div>
+        <label>Sex:</label><br/>
+        <input #newSex>
+      </div>
+      <div>
+        <label>Likes:</label><br/>
+        <input #newLikes>
+      </div>
+      <div>
+        <label>Dislikes:</label><br/>
+        <input #newDislikes>
+      </div>
+      <button class="btn btn-dark" (click)="submitForm(newName.value, newSpecies.value);">Add</button>
+    </form>
   </div>
   `
 })
