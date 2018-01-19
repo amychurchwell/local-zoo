@@ -15,7 +15,10 @@
           <h5 class="card-title">{{animal.name}}, {{animal.species}}.</h5>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Age: {{animal.age}}</li>
-            <li class="list-group-item">Diet: {{animal.diet}}</li>
+            <li class="list-group-item">
+              Diet:
+              <span [ngClass]="animalDiet(animal)">{{animal.diet}}</span>
+              </li>
             <li class="list-group-item">Location: {{animal.location}}.</li>
             <li class="list-group-item">Caretakers: {{animal.caretakers}}.</li>
             <li class="list-group-item">Gender: {{animal.sex}}.</li>
@@ -27,7 +30,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="card">
+    <div class="card edit">
      <div class="card-body" *ngIf="selectedAnimal">
        <h3>Edit Animal</h3>
        <div class="form-group">

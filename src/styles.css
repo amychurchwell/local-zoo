@@ -1,1 +1,18 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+.card {
+  height: 100%;
+  margin: 5px;
+}
+
+.row {
+  margin: 5px;
+}
+
+form {
+  margin: 10px;
+}
+
+.edit {
+  margin: 20px;
+}

@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
 import { AppComponent } from './app.component';
 import { NewAnimalComponent } from './new-animal.component';
+import { AgePipe } from './age.pipe';
 
 
 @Component({
@@ -18,7 +19,7 @@ import { NewAnimalComponent } from './new-animal.component';
 export class AnimalSearch {
 
   filterByAge: string = "all";
-  @Input() childAnimals: Animal[];
+  @Input() animals: Animal[];
   @Output() clickSender = new EventEmitter();
 
 
