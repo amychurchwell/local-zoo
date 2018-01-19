@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { Animal } from './animal.component';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Animal } from './animal.model';
+import { AnimalSearch } from './search.component';
 
 @Component({
   selector: 'app-root',
@@ -18,4 +19,8 @@ export class AppComponent {
   editAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
   }
+
+  // addAnimal(newAnimalFromChild: Animal){
+  // this.animals.push(newAnimalFromChild);
+  // }
 }

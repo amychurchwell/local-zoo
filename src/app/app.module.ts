@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { Animal } from './animal.component';
+import { AnimalSearch } from './search.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Animal
+    AnimalSearch
   ],
   imports: [
     BrowserModule,
