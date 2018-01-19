@@ -12,7 +12,8 @@ import { Animal } from './animal.component';
     Animal
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [

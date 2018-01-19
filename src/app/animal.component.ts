@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 
 export class Animal {
-  public pintsRemaining: number = 124;
+  public selectedAnimal = false;
   constructor(
     public species: string,
     public name: string,
