@@ -1,19 +1,21 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
+import { AppComponent } from './app.component';
 
 @Component({
   selector: 'age-search',
   template:`
   <select (change)="onChange($event.target.value)">
-    <option value="old">Old (2<)</option>
-    <option value="young">Young (<2)</option>
+    <option value="young">Young</option>
+    <option value="old">Old</option>
   </select>
+  <li *ngFor="let Animal of animals | age:filterByAge">{{animal.name}} {{animal.age}}</li>
   `
 })
 
 export class AnimalSearch {
 
-  filterByAge: number;
+  filterByAge: string = "young";
   @Input() childAnimals: Animal[];
   @Output() clickSender = new EventEmitter();
 
