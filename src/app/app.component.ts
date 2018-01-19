@@ -13,12 +13,9 @@ export class AppComponent {
     new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool shade', 'Loud Noises'),
     new Animal('Panda', 'Oreo', 5, 'Omnivore', 'China', 8, 'Male', 'Bamboo', 'Data Entry')
   ];
+  selectedAnimal = null;
 
-
-  editAnimal() {
-    this.selectedAnimal = !this.selectedAnimal
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
   }
 }
-
-// new Animal(),
-// new Animal('Panda', 'Oreo', 5, 'Omnivore', 'China', 8, 'Male', 'Bamboo', 'Data Entry')

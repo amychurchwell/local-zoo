@@ -15,7 +15,7 @@
             <li class="list-group-item">{{animal.location}}.</li>
           </ul>
         </div>
-        <button (click)="editAnimal(Animal)" class="btn btn-dark">Edit</button>
+        <button (click)="editAnimal(animal)" class="btn btn-dark">Edit</button>
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
        <label>Caretakers:</label>
        <input>
      </div>
-     <button class="btn btn-dark" (click)="editAnimal()">Done</button>
+     <button class="btn btn-dark" (click)="editAnimal(null)">Done</button>
    </div>
  </div>
 </div>
