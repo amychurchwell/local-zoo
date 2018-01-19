@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
- selector: 'test',
+ selector: 'animal',
  templateUrl: './animal.component.html'
 })
-export class AnimalComponent {
- constructor() {}
-
- name: string = 'Animal Component';
+export class Animal {
+ constructor(
+   public species: string,
+   public name: string,
+   public age: number,
+   public diet: string,
+   public location: string,
+   public caretakers: number,
+   public sex: string,
+   public likes: string,
+   public dislikes: string,
+ ){}
 }
