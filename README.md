@@ -1,9 +1,23 @@
 # Local Zoo
-#### January 19, 2018. Amy Churchwell, _Epicodus Student._
+January 19, 2018. Amy Churchwell, Epicodus Student.
+
+:email: Feel free to email me at amy.churchwell@gmail.com with any feedback.
 
 An application to track animals at a local zoo.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
+
+## Setup Instructions
+
+Clone from GitHub.
+```
+$ git clone https://github.com/amychurchwell/local-zoo.git
+```
+
+Launch development server. (--open flag will open browser for you.)
+```
+$ ng serve --open
+```
 
 ## Requirements
 
