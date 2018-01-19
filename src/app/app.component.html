@@ -2,17 +2,20 @@
   <div class="jumbotron">
     <h1 class="display-4">Welcome to {{ title }}!</h1>
     <p class="lead">This is an app to track zoo animals. <i class="fa fa-check"></i></p>
+    <button class="btn btn-dark">Add animal.</button>
   </div>
   <div class="row">
     <div class="col-md-4" *ngFor="let animal of animals">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">{{animal.name}}</h5>
+          <h5 class="card-title">{{animal.name}}, {{animal.species}}.</h5>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">{{animal.age}}</li>
-            <li class="list-group-item">{{animal.species}}</li>
-            <li class="list-group-item">{{animal.diet}}</li>
-            <li class="list-group-item">{{animal.location}}.</li>
+            <li class="list-group-item">Age: {{animal.age}}</li>
+            <li class="list-group-item">Diet: {{animal.diet}}</li>
+            <li class="list-group-item">Location: {{animal.location}}.</li>
+            <li class="list-group-item">Caretakers: {{animal.caretakers}}.</li>
+            <li class="list-group-item">Gender: {{animal.sex}}.</li>
+            <li class="list-group-item">Likes: {{animal.likes}} <br> Dislikes: {{animal.dislikes}}</li>
           </ul>
         </div>
         <button (click)="editAnimal(animal)" class="btn btn-dark">Edit</button>
@@ -28,11 +31,11 @@
      </div>
      <div class="form-group">
        <label>Age:</label>
-       <input>
+       <input [(ngModel)]="selectedAnimal.age">
      </div>
      <div class="form-group">
        <label>Caretakers:</label>
-       <input>
+       <input [(ngModel)]="selectedAnimal.caretakers">
      </div>
      <button class="btn btn-dark" (click)="editAnimal(null)">Done</button>
    </div>
