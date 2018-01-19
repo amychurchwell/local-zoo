@@ -26,4 +26,8 @@ export class AppComponent {
   this.animals.push(newAnimalFromChild);
 }
 
+addButtonClick() {
+  this.addButton = !this.addButton;
+}
+
 }
