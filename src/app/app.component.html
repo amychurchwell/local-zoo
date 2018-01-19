@@ -2,8 +2,11 @@
   <div class="jumbotron">
     <h1 class="display-4">Welcome to {{ title }}!</h1>
     <p class="lead">This is an app to track zoo animals. <i class="fa fa-check"></i></p>
-    <button class="btn btn-dark">Add animal.</button>
+    <button class="btn btn-dark">Add Animal</button>
     <age-search></age-search>
+  </div>
+  <div class="row">
+    <new-animal (newAnimal)="addAnimal($event)"></new-animal>
   </div>
   <div class="row">
     <div class="col-md-4" *ngFor="let animal of animals | age:filterByAge">

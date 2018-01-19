@@ -1,6 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
 import { AppComponent } from './app.component';
+import { NewAnimalComponent } from './new-animal.component';
+
 
 @Component({
   selector: 'age-search',
