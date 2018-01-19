@@ -16,6 +16,7 @@ export class AppComponent {
     new Animal('Panda', 'Oreo', 5, 'Omnivore', 'China', 8, 'Male', 'Bamboo', 'Data Entry')
   ];
   selectedAnimal = null;
+  addButton = null;
 
   editAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
