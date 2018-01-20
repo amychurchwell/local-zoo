@@ -47,26 +47,15 @@ Dislikes: "Loud noises"
 
 - [x] I want to click an animal to edit its name, age or caretakers.
 
-### Technical Requirements
+### Known Bugs
 
-- [x] Application uses a model to organize data.
-
-- [ ] Project is in a polished, portfolio-quality state. (Clear code presentation, error free, basic styling, complete README, thoughtful UI, etc.)
-
-- [ ] README contains details on functionality you'd include in the future, given the opportunity.
-
-- [ ] Required functionality was in place by the Friday deadline.
-
-- [ ] Project demonstrates understanding of week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
-
-- [ ] Separate components are used for creating and editing instances of a model and for viewing a list of instances.
-
-- [ ] Users can successfully create and edit instances of a model, as well as view a list of all instances.
-
-- [x] TypeScript is used throughout application; including variable data types.
-
-- [ ] The list of instances can be filtered using a pipe.
-
+* Pipe is not displaying filtered results through drop-down search menu.
 
 ## Future Functionality
+
 What I would include in the future, given the opportunity.
+
+* Of course, the pipe bug would be fixed.
+* Worker schedules.
+* I would include add a chores element. Every animal would have a list of everyday required tasks. Assign workers to those tasks.
+* A feeding schedule. Assign workers to those tasks.
