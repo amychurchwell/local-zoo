@@ -34,22 +34,5 @@
     </div>
   </div>
   <div class="row">
-    <div class="card edit">
-     <div class="card-body" *ngIf="selectedAnimal">
-       <h3>Edit Animal</h3>
-       <div class="form-group">
-         <label>Name:</label>
-         <input [(ngModel)]="selectedAnimal.name">
-       </div>
-       <div class="form-group">
-         <label>Age:</label>
-         <input [(ngModel)]="selectedAnimal.age">
-       </div>
-       <div class="form-group">
-         <label>Caretakers:</label>
-         <input [(ngModel)]="selectedAnimal.caretakers">
-       </div>
-       <button class="btn btn-dark" (click)="editAnimal(null)">Done</button>
-     </div>
-   </div>
+    <app-edit animal="selectedAnimal" *ngIf="selectedAnimal"></app-edit>
 </div>

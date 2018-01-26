@@ -2,11 +2,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
 import { AnimalSearch } from './search.component';
 import { NewAnimalComponent } from './new-animal.component';
+import { EditComponent } from './edit/edit.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  directives: [EditComponent]
 })
 
 export class AppComponent {
@@ -16,8 +18,8 @@ export class AppComponent {
     new Animal('Ocelot', 'Prince', 4, 'Carnivore', 'Tropical Rain Forest Building', 6, 'Male', 'Laying in the Sunshine', 'Toys that are not rope-based'),
     new Animal('Northwest Black Tailed Deer', 'Tinkerbell', 8, 'Herbivore', 'Northern Trail', 2, 'Female', 'Delicate roots and leaves', 'Loud Noises')
   ];
-  selectedAnimal = null;
   addButton = null;
+  selectedAnimal = null;
 
   editAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
