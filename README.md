@@ -14,6 +14,11 @@ Clone from GitHub.
 $ git clone https://github.com/amychurchwell/local-zoo.git
 ```
 
+Install NPM packages.
+```
+$ npm Install
+```
+
 Launch development server. (--open flag will open browser for you.)
 ```
 $ ng serve --open
