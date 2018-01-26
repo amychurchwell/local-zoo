@@ -48,19 +48,18 @@ Dislikes: "Loud noises"
 
 - [x] I want to view a list of animals I have logged.
 
-- [ ] I want options to view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older).
+- [x] I want options to view all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older).
 
-- [x] I want to click an animal to edit its name, age or caretakers.
+- [ ] I want to click an animal to edit its name, age or caretakers.
 
 ### Known Bugs
 
-* Pipe is not displaying filtered results through drop-down search menu.
+* Separation of form into component is not communicating with animal list. WIP.
 
 ## Future Functionality
 
 What I would include in the future, given the opportunity.
 
-* Of course, the pipe bug would be fixed.
 * Worker schedules.
 * I would include add a chores element. Every animal would have a list of everyday required tasks. Assign workers to those tasks.
 * A feeding schedule. Assign workers to those tasks.
