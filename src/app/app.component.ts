@@ -33,6 +33,10 @@ addButtonClick() {
   this.addButton = !this.addButton;
 }
 
+finishedEditing() {
+  this.selectedAnimal = null;
+}
+
 animalDiet(animal){
   if(animal.diet === "Herbivore"){
     return "badge badge-pill badge-success";

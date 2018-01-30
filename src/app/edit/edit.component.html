@@ -3,16 +3,16 @@
    <h3>Edit Animal</h3>
    <div class="form-group">
      <label>Name:</label>
-     <input [(ngModel)]="selectedAnimal.name">
+     <input [(ngModel)]="childSelectedAnimal.name">
    </div>
    <div class="form-group">
      <label>Age:</label>
-     <input [(ngModel)]="selectedAnimal.age">
+     <input [(ngModel)]="childSelectedAnimal.age">
    </div>
    <div class="form-group">
      <label>Caretakers:</label>
-     <input [(ngModel)]="selectedAnimal.caretakers">
+     <input [(ngModel)]="childSelectedAnimal.caretakers">
    </div>
-   <button class="btn btn-dark" (click)="editAnimal(null)">Done</button>
+   <button class="btn btn-dark" (click)="doneButtonClicked()">Done</button>
  </div>
 </div>

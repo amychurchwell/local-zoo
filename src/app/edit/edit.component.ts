@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from '../animal.model';
 
 @Component({
@@ -7,11 +7,13 @@ import { Animal } from '../animal.model';
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent {
-  @Input() animal: Animal;
+  @Input() childSelectedAnimal: Animal;
+  @Output() doneButtonClickedSender = new EventEmitter();
 
   constructor() { }
 
+ doneButtonClicked(){
+   this.dontButtonClickedSender.emit();
+ }
 
   }
-
-}

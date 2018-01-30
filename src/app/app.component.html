@@ -34,5 +34,5 @@
     </div>
   </div>
   <div class="row">
-    <app-edit animal="selectedAnimal" *ngIf="selectedAnimal"></app-edit>
+    <app-edit [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()" *ngIf="selectedAnimal"></app-edit>
 </div>
